@@ -1,27 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/proxy/:path*",
-      "destination": "https://claude-gpt-by-noneusr.onrender.com/api/ai/claude-opus-4.7/message/:path*"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/proxy/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET, OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type"
-        }
-      ]
+      "source": "/proxy/:message",
+      "destination": "https://claude-gpt-by-noneusr.onrender.com/api/ai/claude-opus-4.7/message/:message?token=qPUCehWcYAiynP9y3QMMyghhVWYEals9"
     }
   ]
 }
