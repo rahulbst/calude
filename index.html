@@ -391,7 +391,7 @@
 
 <script>
 const API_BASE = '/proxy';
-const TOKEN = 'qPUCehWcYAiynP9y3QMMyghhVWYEals9';
+const TOKEN = '';
 
 let conversations = [];
 let currentConvId = null;
@@ -551,7 +551,7 @@ async function sendMessage() {
 
   try {
     const encoded = encodeURIComponent(text);
-    const directUrl = `${API_BASE}/${encoded}?token=${TOKEN}`;
+    const directUrl = `${API_BASE}/${encoded}`;
     let data = null;
 
     try {
